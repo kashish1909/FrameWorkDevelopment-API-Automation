@@ -43,6 +43,7 @@ public class  UserTest {
     public void postUser() throws JsonProcessingException {
         Response res= users.createUser(userData);
         Assert.assertEquals(res.getStatusCode(),200);
+        System.out.println("Kashish Dhabuwala");
         res.then().log().all();
     }
 
